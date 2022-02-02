@@ -79,8 +79,8 @@ text-shadow:0px 0px 5px #fff;
 
 /*imagens*/
 .img-perfil {  
-    border-radius: 50%;
-    max-width: 45%;
+    border-radius: 10%;
+    max-width: 55%;
     padding-top:50px;
     padding-bottom: 20px;  
     text-align: center;    
@@ -88,7 +88,6 @@ text-shadow:0px 0px 5px #fff;
     margin-right: auto;       
 }
 
-}
 .icone-email {
     height: 100%;
     max-width: auto;
@@ -118,4 +117,3 @@ text-shadow:0px 0px 5px #fff;
     text-align: center;
     color:white    
 }
-
