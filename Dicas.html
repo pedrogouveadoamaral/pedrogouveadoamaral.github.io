@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+    
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedro Gouvêa do Amaral</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>   
+</head>   
+
+<body class="background">   
+    <link href="styles/comandos_git.css" rel="stylesheet">
+   
+      <nav class="menu">
+        <a href="index.html">Inicial</a>
+      </nav>
+      
+    <section> 
+    <section class="text-center">
+        <div class="container">
+            <img src="img/GIT+GITHUB.png" class="imagem-principal">
+            <h1 class="jumbotron-heading paraprincipal">Comandos<br/>Git<br/>&<br/>GitHub</h1>                                    
+        </div>
+    </section>
+    
+    <section class="listaordenada">
+        <h2 class="titulo">Inserir senha de root no PHPMyAdmin:</h2>
+        <p>
+            Xampp – Colocar senha no phpMyAdmin
+Publicado em 9 de fevereiro de 2019 por carloshdebrito
+1 – Abra o arquivo “config.inc.php” que se encontra na pasta X:\Xampp\phpMyAdmin.
+
+Agora encontre as linhas abaixo:
+
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+$cfg['Servers'][$i]['user'] = 'root';
+$cfg['Servers'][$i]['password'] = '';
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Lang'] = '';
+Pelas Linhas
+
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+$cfg['Servers'][$i]['user'] = 'root';
+$cfg['Servers'][$i]['password'] = 'digite aqui sua senha';
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
+$cfg['Lang'] = 'pt_BR';
+2 – Abra o Painel de Controle do Xampp, clique em “Start” no Apache e MySQL e clique em “Shell” para abrir o prompt de comando:
+
+
+
+2 – Com o prompt do Shell aberto digite o comando abaixo colocando a sua senha e de ENTER:
+
+mysqladmin --user=root password "suasenha"
+Pode haver erro quando for criar usuários e bancos de dados. Para evita-lo vá na pasta /Xampp/mysql” e crie a pasta lib e dentro da pasta /Xampp/mysql/lib crie a pasta /plugin, assim o erro não vai acontecer.
+
+Ponto agora é só logar.
+
+PS: No Xampp instalado no Ubuntu Linux, antes de alterar a senha no arquivo /opt/lampp/phpmyadmin/config.inc.php, acesse o phpMyAdmin, vá em Contas de usuário e altere a senha da conta root para o host 127.0.0.1 e da conta root para o host localhost clicando em Editar privilégios e depois em Alterar a senha.
+
+Feito isso você vai acessar o http://localhost/phpmyadmin e digitar o usuário root e a senha cadastrada.
+        </p>
+       
+    </section>  
+                              
+</section>
+
+</body> 
+
+<footer class="footer" id="footer">
+    Desenvolvido por Pedro Gouvêa do Amaral - 2021                       
+ </footer>
+
+</html>

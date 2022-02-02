@@ -1,0 +1,121 @@
+/*estrtuturas*/
+*{margin: 0; padding: 0;}
+
+p {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.background{
+    background-color: #253442;
+}
+
+/*Início do Menu superior*/
+.menu{
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+}
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    }
+
+.menu li a{color:rgb(255, 255, 255); text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#333;
+    display:none;
+    }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+    }
+    /*Fim do Menu superior*/
+   
+/*títulos*/
+.perfil{
+    padding-top:30px;
+    padding-bottom: 20px;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    color: white;    
+}
+
+.h1menores{
+    padding-top:30px;
+    padding-bottom: 20px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: white; 
+}
+.links{
+    padding-top:20px;
+    padding-bottom: 30px;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: white; 
+}
+
+/*imagens*/
+.img-perfil {  
+    border-radius: 50%;
+    max-width: 45%;
+    padding-top:50px;
+    padding-bottom: 20px;  
+    text-align: center;    
+    margin-left: auto;
+    margin-right: auto;       
+}
+
+}
+.icone-email {
+    height: 100%;
+    max-width: auto;
+    border-radius: 25%;
+    padding-left: 8px;
+}
+
+.icones {
+    height: 100%;
+    max-width: auto;
+    border-radius: 30%;
+    padding-left: 8px;
+}
+
+.icone-github {
+    height: 100%;
+    max-width: auto;
+    border-radius: 80%;
+    padding-left: 8px;
+}
+
+.footer{
+    background-color:#617180; 
+    margin-top: auto;      
+    padding-top:8px;
+    padding-bottom:8px;
+    text-align: center;
+    color:white    
+}
+
